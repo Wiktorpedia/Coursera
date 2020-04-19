@@ -12,13 +12,81 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <title>Boostrap Starter Page</title>
+    <title>Pizzeria Golf</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
   </head>
 <body>
+  <header class="nav-header">
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <p class="nav-brand">Food, LLC</p>
+          </div>
 
-  <h1>Hello Coursera!</h1>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="true">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+            <li class="text-center">
+              <a href="#pizza-div"><p class="item">Pizza</p></a>
+              <hr class="visible-xs">
+            </li>            
+            <li class="text-center pasta-item">
+              <a href="#pasta-div"><p class="item">Pasta</p></a>
+              <hr class="visible-xs">
+            </li>
+            <li class="text-center dryck-item">
+              <a href="#dryck-div"><p class="item">Dryck</p></a>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </nav>
+    </header>
+
+  <h1 class="text-center">Meny</h1>
+
+  <div class="row container container-fluid">
+  <div class="col-md-12 col-sm-12 col-xs-12" id="pizza-div">
+    <section>
+    <div id="pizza">
+      Pizza
+    </div>
+    <p>
+      The modern pizza was originally invented in Naples, Italy but the word pizza is Greek in origin, derived from the Greek word pēktos meaning solid or clotted. The ancient Greeks covered their bread with oils, herbs and cheese. The first major innovation that led to flat bread pizza was the use of tomato as a topping. It was common for the poor of the area around Naples to add tomato to their yeast-based flat bread, and so the pizza began.
+    </p>
+    </section>
+  </div>
+  <div class="col-md-12 col-sm-12 col-xs-12" id="pasta-div">
+    <section>
+    <div id="pasta">
+      Pasta
+    </div>
+    <p>
+      The history of pasta is difficult to trace for several reasons. The word itself translates to paste in Italian. This is a reference to the dough, made from a combination of flour and water or eggs - all simple components that have been around for centuries. This makes it hard to differentiate pasta from other ancient dishes made from the same ingredients. In addition, since pasta has long been a food of the common people, it has not received as much attention as more extravagant foods - a pity, since it's one of the most popular foods on the planet! Let's remedy that by exploring the roots of pasta here on The History Kitchen.
+    </p>
+    </section>
+  </div>
+  <div class="col-md-12 col-sm-12 col-xs-12" id="dryck-div">
+    <section>
+    <div id="dryck">
+      Dryck
+    </div>
+    <p>
+      Nebbiolo (“Nebby-oh-low”) is a full-bodied red wine more famously known by the two production regions of Barolo and Barbaresco in Piedmont, Italy. Nebbiolo wines are translucent (like Pinot!) and have a delicate smell, but when you taste them you are greeted with robust tannin and high acidity.
+    </p>
+    </section>
+  </div>
+  </div>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-1.11.3.min.js"></script>
